@@ -1,0 +1,90 @@
+﻿@page
+@model IndexModel
+@{
+}
+<section class="ls section-content-min-height toppadding_10">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" style="margin-top: 15px;">
+            <h2 style="text-align: left">मतदाता पंजीकरण <br> Voter Registration</h2>    
+        </div>
+        <div class="col-md-6 col-md-offset-10">
+            <a class="btn btn-info" asp-page="/Forms/TrackStatus">Track Application Status</a>
+        </div>
+    </div>
+</div>
+<div class="container" style="border: 2px; ">
+    <div class="row padded" style="padding-top: 10px;">
+      <table class="table" data-max="5" style="margin-left: auto;margin-right: auto;">
+        <thead>
+          <tr>
+            <th style="width: 20%;">प्रारुप प्रकार<br>Form Type</th>
+            <th style="width: 60%;text-align:left">प्रारुप विवरण <br>Form Description</th>
+            <th style="width: 20%;text-align:center">फार्म भरने के निर्देश<br>Form Filling Instruction</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td><a asp-page="/Forms/Form6">प्रारुप 6 <br> Form 6</a></td>
+                <td>निर्वाचक नामावली में नाम सम्मिलित किए जाने के लिए आवेदन <br> Inclusion of names for residents electors</td>
+                <td style="vertical-align: middle; text-align: center; ">
+                    <a href="/form_instruction/form6.pdf" target="_blank">
+                        <img style="position: relative;" src="/images/Content/pdf_icon.png" alt="" />
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td><a asp-page="/Forms/Form6a">प्रारुप 6क <br> Form 6 A</a></td>
+                <td>किसी प्रवासी निर्वाचक द्वारा निर्वाचक नामावली में नाम सम्मिलित किए जाने के लिए आवेदन <br> Inclusion of names for overseas electors</td>
+                <td style="vertical-align: middle; text-align: center;">
+                    <a href="/form_instruction/form6A.pdf" target="_blank">
+                        <img src="/images/Content/pdf_icon.png" alt="" />
+                    </a>
+                </td>
+            </tr>
+                <tr>
+                    <td><a asp-page="/Forms/Form7">प्रारुप 7 <br> Form 7</a></td>
+                    <td>निर्वाचक नामावली में नाम की प्रविष्टि पर आक्षेप या प्रविष्ट नाम को हटाये जाने हेतु आवेदन <br> Any objection on inclusion of names</td>
+                    <td style="vertical-align: middle; text-align: center;">
+                        <a href="/form_instruction/form7.pdf" target="_blank">
+                            <img src="/images/Content/pdf_icon.png" alt="" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a asp-page="/Forms/Form8">प्रारुप 8 <br> Form 8 </a></td>
+                    <td>निर्वाचक नामावली में प्रविष्टि विशिष्टियों की शुद्धि के लिए आवेदन <br> Correction of entries in the Electoral Rolls</td>
+                    <td style="vertical-align: middle; text-align: center;">
+                        <a href="/form_instruction/form8.pdf" target="_blank">
+                            <img src="/images/Content/pdf_icon.png" alt="" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a asp-page="/Forms/Form8a">प्रारुप 8क <br> Form 8 A</a></td>
+                    <td>निर्वाचक नामावली में प्रविष्टि को अन्यत्र रखने के लिए आवेदन <br> Transposition within Assembly</td>
+                    <td style="vertical-align: middle; text-align: center;">
+                        <a href="/form_instruction/form8A.pdf" target="_blank">
+                            <img src="/images/Content/pdf_icon.png" alt="" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a asp-page="/Forms/Form001">प्रारुप 001 <br> Form 001</a></td>
+                    <td>Replacement of Elector's Photo ldentity Card (EPIC)</td>
+                    <td style="vertical-align: middle; text-align: center;">
+                        <a href="#" target="_blank">
+                            <img src="/images/Content/pdf_icon.png" alt="" />
+                        </a>
+                    </td>
+                </tr>
+
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </div>
+    <br /><br /><br />
+    <div class="clear-desktop"></div>
+  </div>
+</section>

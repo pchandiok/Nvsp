@@ -14,6 +14,6 @@ namespace Nvsp.Models
 
 		[ForeignKey("EpicNumberId")]
 		public EpicNumber EpicNumber { get; set; }
-		public string EpicNumberId { get; set; }
+		public int EpicNumberId { get; set; }
 	}
 }

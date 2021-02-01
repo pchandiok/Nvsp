@@ -6,8 +6,9 @@ namespace Nvsp.Models
 {
     public class EpicNumber
     {
-        // public int Id { get; set; }
-        public string EpicNumberId { get; set; }
+		[Key]
+        public int EpicNumberId { get; set; }
+        public string EPICNumber { get; set; }
 
 		public string HouseNo { get; set; }
 		public string StreetAreaLocality { get; set; }
@@ -15,14 +16,14 @@ namespace Nvsp.Models
 		public string PostOffice { get; set; }
 		public int PinCode { get; set; }
 
-        [ForeignKey("BirthId")]
-        public BirthPlace BirthPlace { get; set; }
-        public int BirthId { get; set; }
-
 		[ForeignKey("ConstituencyId")]
 		public Constituency Constituency { get; set; }
 		public int ConstituencyId { get; set; }
 
 		public DateTime ResidentSince { get; set; }
+
+		[ForeignKey("PersonalId")]
+		public PersonalDetail PersonalDetails { get; set; }
+		public int PersonalId { get; set; }
     }
 }

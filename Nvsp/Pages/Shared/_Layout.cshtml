@@ -75,12 +75,12 @@
 								<nav class="mainmenu_wrapper text-right">
 									<ul class="mainmenu sf-menu">
 										<li class="active">
-											<a asp-page="/">Home</a>
+											<a asp-page="/Index">Home</a>
 										</li>
 										<li>
-											<a asp-page="About">About Us</a>
+											<a asp-page="/About">About Us</a>
 										</li>
-										<partial name="_LoginPartial" /> 
+										<partial name="_LoginPartial" />
 									</ul>
 								</nav>
 								<span class="toggle_menu">
@@ -197,17 +197,18 @@
         		</div>
 		</div>
 
-    		<script src="~/js/jquery-ui.min.js"></script>
+    	<script src="~/js/jquery-ui.min.js"></script>
 		<script src="~/js/compressed.js"></script>
 		<script src="~/js/main.js"></script>
 		<script src="~/js/jquery_1.19.1-validate.js"></script>
 
-    		<link href="~/css/jquery.toast.min.css" rel="stylesheet" />
+    	<link href="~/css/jquery.toast.min.css" rel="stylesheet" />
 		<script src="~/js/jquery.toast.min.js"></script>
 		<script src="~/js/toasterNotifications.js"></script>
 		<script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 		<link href="~/css/toastr.css" rel="stylesheet" />
 		<script src="~/js/toastr.min.js"></script>
+		<script src="~/js/site.js"></script>
 		<script>
 			function preventBack() 
 			{
