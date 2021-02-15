@@ -15,9 +15,7 @@ namespace Nvsp.Data
         }
 
         public DbSet<Voter> Voters { get; set; }
-        public DbSet<PersonalDetail> PersonalDetails { get; set; }
         public DbSet<Constituency> Constituency { get; set; }
-        public DbSet<EpicNumber> EpicNumber { get; set; }
 
     }
 }
